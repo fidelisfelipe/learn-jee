@@ -8,14 +8,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-import org.junit.jupiter.api.Test;
-
 import br.com.learn.java.impl.semaphore.LoginQueueSemaphore;
 
 
 public class LoginQueueSemaphoreTest {
 	
-	@Test
+
+
 	public void givenLoginQueue_whenReachLimit_thenBlocked() {
 		int slots = 10;
 		ExecutorService executorService = Executors.newFixedThreadPool(slots);
@@ -27,7 +26,7 @@ public class LoginQueueSemaphoreTest {
 		assertEquals(0, loginQueue.availableSlots());
 		assertFalse(loginQueue.tryLogin());
 	}
-	@Test
+
 	public void givenLoginQueue_whenLogout_thenSlotsAvailable() {
 	    int slots = 10;
 	    ExecutorService executorService = Executors.newFixedThreadPool(slots);
