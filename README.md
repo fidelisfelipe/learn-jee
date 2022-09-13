@@ -20,7 +20,8 @@ Estamos iniciando o projeto, colabore :)
 
 ## Installation
 
-Requires Java 8+
+Requires [OpenJDK 8+](https://www.openlogic.com/openjdk-downloads)
+Install Variable Path JAVA_HOME
 
 Install the dependencies...
 
