@@ -111,7 +111,6 @@ public class FunctionalInterfaceTest implements SAM{
 			System.out.print(i + " "); 
 		}
 		
-		assertEquals(Runtime.getRuntime().availableProcessors(), 4);
 		
 		List<DescontoUnary> descontoList = Arrays.asList(
 				quantia -> quantia.multiply(BigDecimal.valueOf(0.5))
